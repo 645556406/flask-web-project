@@ -8,6 +8,9 @@ headers = {
 }
 api = 'https://kdsa.cn/request/v1.0'
 
+@app.route('/index2')
+def index2():
+    return render_template('index2.html')
 
 @app.route('/')
 def index():
@@ -63,4 +66,4 @@ def about():
 
 
 if __name__ == '__main__':
-    app.run()
+    app.run(debug=True)
